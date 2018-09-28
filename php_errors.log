@@ -1,0 +1,20 @@
+[27-Sep-2018 13:14:49 UTC] PHP Warning:  preg_split() expects parameter 2 to be string, array given in /home/ubuntu/workspace/wp-includes/kses.php on line 1325
+[27-Sep-2018 13:14:49 UTC] PHP Stack trace:
+[27-Sep-2018 13:14:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Sep-2018 13:14:49 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:100
+[27-Sep-2018 13:14:49 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[27-Sep-2018 13:14:49 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[27-Sep-2018 13:14:49 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[27-Sep-2018 13:14:49 UTC] PHP   6. CedWad_Admin->CedWad_createProducts() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[27-Sep-2018 13:14:49 UTC] PHP   7. CedWad_Admin->CedWad_BlastBunch() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/class-CedWad-admin.php:515
+[27-Sep-2018 13:14:49 UTC] PHP   8. CedWad_Admin->CedWad_BlastProduct() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/class-CedWad-admin.php:585
+[27-Sep-2018 13:14:49 UTC] PHP   9. CedWad_Admin->CedWad_CreateProductToStore() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/class-CedWad-admin.php:540
+[27-Sep-2018 13:14:49 UTC] PHP  10. CedWad_Admin_Create_Product->CedWadCreateProduct() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/class-CedWad-admin.php:567
+[27-Sep-2018 13:14:49 UTC] PHP  11. CedWad_Admin_Create_Product->CedWadInsertProductImage() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/partials/CedWad-admin-create-product.php:111
+[27-Sep-2018 13:14:49 UTC] PHP  12. CedWad_Admin_Create_Product->CedWadSendRequest() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/partials/CedWad-admin-create-product.php:518
+[27-Sep-2018 13:14:49 UTC] PHP  13. wp_remote_post() /home/ubuntu/workspace/wp-content/plugins/woo-aliexpress-dropshipping-lite/admin/partials/CedWad-admin-create-product.php:729
+[27-Sep-2018 13:14:49 UTC] PHP  14. WP_Http->post() /home/ubuntu/workspace/wp-includes/http.php:187
+[27-Sep-2018 13:14:49 UTC] PHP  15. WP_Http->request() /home/ubuntu/workspace/wp-includes/class-http.php:589
+[27-Sep-2018 13:14:49 UTC] PHP  16. wp_kses_bad_protocol() /home/ubuntu/workspace/wp-includes/class-http.php:256
+[27-Sep-2018 13:14:49 UTC] PHP  17. wp_kses_bad_protocol_once() /home/ubuntu/workspace/wp-includes/kses.php:1224
+[27-Sep-2018 13:14:49 UTC] PHP  18. preg_split() /home/ubuntu/workspace/wp-includes/kses.php:1325
